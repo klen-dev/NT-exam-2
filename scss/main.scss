@@ -9,6 +9,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+body{
+    overflow-y: scroll;
+}
+
 .hero{
     padding-top: 50px !important;
     background-color: $hero-color;
@@ -27,6 +31,7 @@
             border-radius: 15px !important;
             text-decoration: none;
             background-color: $btn-color !important;
+            font-family: 'Schoolbell', cursive;
         }
     }
     h1{
@@ -46,31 +51,34 @@
             border-color: $btn-color !important;
             border-radius: 19px !important;
             text-decoration: none;
-            background-color: #FFA63A !important;
             padding: 16px 25px;
-            &:nth-child(even){
-                background-color: transparent !important;
+            transition: 0.2s;
+            &:hover{
+                transition: 0.2s;
+                background-color: #FFA63A !important;
             }
         }
     }
 }
 
 .hero-right{
-    .hero-right__img{
-        position: relative;
-        background: url('../images/hero.png');
-        width: 200px;
-        height: 600px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        @media screen and (max-width: 650px) {
-            height: 400px;
-          }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        top: 0;
+        width: 120%;
     }
-    .hero-right__right{
-        position: absolute;
-        right: 0;
-        top: 50%;
+    .hero-right__img{
+        // background: url('../images/hero.png');
+        // width: 200px;
+        // height: 600px;
+        // background-size: contain;
+        // background-position: cover;
+        // background-repeat: no-repeat;
+        // @media screen and (max-width: 650px) {
+        //     height: 400px;
+        //   }
     }
 }
 .hero-bottom{
@@ -98,6 +106,7 @@
         >a{
             color: $btn-color !important;
             text-align: center;
+            font-family: 'Schoolbell', cursive;
         }
         h2{
             max-width: 510px;
@@ -196,7 +205,8 @@
 }
 
 .blog{
-    padding: 200px 0;
+    padding: 200px 0 100px 0;
+    border-bottom: 3px solid #D4D4D4;
     @media screen and (max-width: 1000px){
         padding: 100px 0;
     }
@@ -209,6 +219,7 @@
         }
     }
     .blog-right{
+        padding-top: 50px;
         h2{
             color: #08546C;
             font-weight: 600;
@@ -227,6 +238,34 @@
             border-radius: 28px;
             text-decoration: none;
             padding: 16px 24px;
+        }
+    }
+    .blog-bottom{
+        padding-top: 50px;
+        padding-left: 10px;
+        h2{
+            color: #08546C;
+            padding-bottom: 10px;
+        }
+        p{
+            color: #757575;
+            padding-bottom: 15px;
+        }
+        .blog-btns{
+            display: flex;
+            flex-wrap: wrap;
+            a{
+                text-decoration: none;
+                color: #757575;
+                gap: 5px;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                border-radius: 20px;
+                &:hover{
+                    color: #FFA800;
+                    background-color: #FFF8EB;
+                }
+            }
         }
     }
 }

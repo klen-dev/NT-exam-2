@@ -16,19 +16,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&family=Poppins:wght@100;200;300;400;500;600;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&family=Schoolbell&display=swap" rel="stylesheet">
+    
   </head>
-  <body>
+  <body  data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <!-- header start  -->
     <header id="header" class="navbar-shrink">
       <div id="back-top" class="top">
         <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
       </div>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav id="navbar-example2" class="navbar nav-pills navbar-expand-lg navbar-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Creyente</a>
             <button
@@ -84,40 +84,24 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Dropdown
-                    </a>
+                    <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link disabled"
-                      href="#"
-                      tabindex="-1"
-                      aria-disabled="true"
-                      >Disabled</a
-                    >
+                    <a class="nav-link" href="#services">Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
                   </li>
                 </ul>
-                <form class="d-flex">
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form>
+                <button class="btn btn-outline-success py-2 px-4" type="submit">
+                  Contact
+                </button>
               </div>
             </div>
           </div>
@@ -128,10 +112,11 @@
     <!-- main start  -->
     <main>
       <!-- hero section start  -->
-      <section class="hero p-4 p-lg-5">
+      <section  id="about" class="hero p-4 p-lg-5">
         <div class="container">
           <div class="row align-items-center pb-5">
-            <div
+            <div class="row flex-column-reverse flex-lg-row">
+              <div
               class="hero-left col-12 col-lg-6 d-flex flex-column gap-3 gap-lg-4 mt-5"
             >
               <span class="mb-3">
@@ -149,13 +134,8 @@
             </div>
             <div class="hero-right col-12 col-lg-6">
               <!-- <img class="hero-right__img w-100" src="./images/hero.png" alt=""> -->
-              <div class="hero-right__img w-100">
-                <img
-                  class="hero-right__right w-25"
-                  src="./images/hero-right.png"
-                  alt=""
-                />
-              </div>
+                <img src="./images/hero.png" alt="">
+            </div>
             </div>
             <div
               class="hero-bottom col-12 position-relative d-flex justify-content-center"
@@ -243,7 +223,7 @@
       </section>
       <!-- services /section end  -->
       <!-- section portfolio start  -->
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="container">
           <div class="row">
             <h2 class="col-12">Featured My Portfolio</h2>
@@ -373,8 +353,9 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class=" d-flex justify-content-center flex-column gap-4">
-
+                    <div
+                      class="d-flex justify-content-center flex-column gap-4"
+                    >
                       <span>
                         <img src="./images/titnoq.png" alt="" />
                       </span>
@@ -384,15 +365,16 @@
                         evaluate reviews for any legal concerns, profanity or
                         slander, or any policy violations of <br />
                         <br />
-                        community and content. Services, analytics and reports can
-                        be customized by location, project or initiative.
+                        community and content. Services, analytics and reports
+                        can be customized by location, project or initiative.
                       </p>
                       <p>Mohammad Musa - CEO at Company</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class=" d-flex justify-content-center flex-column gap-4">
-
+                    <div
+                      class="d-flex justify-content-center flex-column gap-4"
+                    >
                       <span>
                         <img src="./images/titnoq.png" alt="" />
                       </span>
@@ -402,15 +384,16 @@
                         evaluate reviews for any legal concerns, profanity or
                         slander, or any policy violations of <br />
                         <br />
-                        community and content. Services, analytics and reports can
-                        be customized by location, project or initiative.
+                        community and content. Services, analytics and reports
+                        can be customized by location, project or initiative.
                       </p>
                       <p>Mohammad Musa - CEO at Company</p>
                     </div>
                   </div>
-                  <div class="carousel-item ">
-                    <div class=" d-flex justify-content-center flex-column gap-4">
-
+                  <div class="carousel-item">
+                    <div
+                      class="d-flex justify-content-center flex-column gap-4"
+                    >
                       <span>
                         <img src="./images/titnoq.png" alt="" />
                       </span>
@@ -420,8 +403,8 @@
                         evaluate reviews for any legal concerns, profanity or
                         slander, or any policy violations of <br />
                         <br />
-                        community and content. Services, analytics and reports can
-                        be customized by location, project or initiative.
+                        community and content. Services, analytics and reports
+                        can be customized by location, project or initiative.
                       </p>
                       <p>Mohammad Musa - CEO at Company</p>
                     </div>
@@ -458,13 +441,13 @@
       </section>
       <!-- section 4 end  -->
       <!-- section blog start  -->
-      <section class="blog">
+      <section id="blog" class="blog">
         <div class="container">
           <div class="row">
-            <div class="blog-left col-6">
+            <div class="blog-left col-12 col-lg-6">
               <img src="./images/blog.png" alt="" />
             </div>
-            <div class="blog-right col-6">
+            <div class="blog-right col-12 col-lg-6 ps-0 ps-lg-5">
               <h2>My Blog And News</h2>
               <p>
                 If It’s abillboard ad, you’ll need a super catchy headline due
@@ -472,7 +455,7 @@
               </p>
               <a href="#">Go To The Blog</a>
             </div>
-            <div class="col-6">
+            <div class="blog-bottom col-12 col-lg-6">
               <h2>How This Agency Helped My Business And Career Journey?</h2>
               <p>
                 A successful marketing plan relies heavily on the pulling-power
@@ -481,7 +464,9 @@
                 action.
               </p>
               <div class="blog-btns">
-                
+                <a href="#">PUBLISHED IN</a>
+                <a href="#">Marketing</a>
+                <a href="#">Category</a>
               </div>
             </div>
           </div>
@@ -491,7 +476,48 @@
     </main>
     <!-- /main end  -->
     <!-- footer start  -->
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="d-flex justify-content-between justify-content-lg-between flex-wrap gap-4 gap-lg-0">
+          <div>
+            <a class="navbar-brand" href="#">Creyente</a>
+            <p class="pt-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
+              mattis nunc aliquam tincidunt est non.
+            </p>
+            <div class="contacts d-flex gap-4">
+              <a href="https://t.me/creyente_uz"><i class="fa-brands fa-telegram"></i></a>
+              <a href="https://instagram.com/klen_uz"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://twitter.com/klen_uz"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="pages">
+            <h3>Pages</h3>
+            <p>Home</p>
+            <p>About</p>
+            <p>Service</p>
+            <p>Portfolio</p>
+            <p>Blog</p>
+          </div>
+          <div class="footer-services">
+            <h3>Services</h3>
+            <p>Web Design</p>
+            <p>App Design</p>
+            <p>Dashboard</p>
+            <p>Illustration</p>
+            <p>Development</p>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>+00 88 999 888 22</p>
+            <p>example@gmail.com</p>
+            <p>www.portfolio.com</p>
+            <p>44, Housing State, 3200</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- /footer end  -->
     <script src="./bootstrap/bootstrap.js"></script>
     <script src="./js/main.js"></script>

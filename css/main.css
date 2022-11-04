@@ -53,6 +53,9 @@ header {
 .navbar .nav-link:hover {
   color: #145E76 !important;
 }
+.navbar .active {
+  background-color: #153844 !important;
+}
 .navbar .btn {
   color: white !important;
   border-color: #145E76 !important;
@@ -84,11 +87,47 @@ header {
   transition: padding 0.5s;
 }
 
+.footer {
+  padding: 100px 0;
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 50px 0;
+  }
+}
+.footer .navbar-brand {
+  color: #08546C;
+  font-weight: 700 !important;
+  font-size: 32px;
+}
+.footer h3 {
+  color: #08546C;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.footer p {
+  max-width: 375px;
+  color: #787878;
+}
+.footer .contacts a {
+  color: #787878;
+  font-size: 28px;
+  transition: 0.3;
+}
+.footer .contacts a:hover {
+  transition: 0.3s;
+  color: #FFA800;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+}
+
+body {
+  overflow-y: scroll;
 }
 
 .hero {
@@ -109,6 +148,7 @@ header {
   border-radius: 15px !important;
   text-decoration: none;
   background-color: #145E76 !important;
+  font-family: "Schoolbell", cursive;
 }
 .hero-left h1 {
   color: white;
@@ -128,32 +168,23 @@ header {
   border-color: #145E76 !important;
   border-radius: 19px !important;
   text-decoration: none;
-  background-color: #FFA63A !important;
   padding: 16px 25px;
+  transition: 0.2s;
 }
-.hero-left .hero-btns a:nth-child(even) {
-  background-color: transparent !important;
-}
-
-.hero-right .hero-right__img {
-  position: relative;
-  background: url("../images/hero.png");
-  width: 200px;
-  height: 600px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-@media screen and (max-width: 650px) {
-  .hero-right .hero-right__img {
-    height: 400px;
-  }
-}
-.hero-right .hero-right__right {
-  position: absolute;
-  right: 0;
-  top: 50%;
+.hero-left .hero-btns a:hover {
+  transition: 0.2s;
+  background-color: #FFA63A !important;
 }
 
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-right img {
+  top: 0;
+  width: 120%;
+}
 .hero-bottom {
   height: 30px;
 }
@@ -179,6 +210,7 @@ header {
 .services .row > a {
   color: #145E76 !important;
   text-align: center;
+  font-family: "Schoolbell", cursive;
 }
 .services .row h2 {
   max-width: 510px;
@@ -268,7 +300,8 @@ header {
 }
 
 .blog {
-  padding: 200px 0;
+  padding: 200px 0 100px 0;
+  border-bottom: 3px solid #D4D4D4;
 }
 @media screen and (max-width: 1000px) {
   .blog {
@@ -282,6 +315,9 @@ header {
 }
 .blog .blog-left img {
   width: 100%;
+}
+.blog .blog-right {
+  padding-top: 50px;
 }
 .blog .blog-right h2 {
   color: #08546C;
@@ -301,4 +337,32 @@ header {
   border-radius: 28px;
   text-decoration: none;
   padding: 16px 24px;
+}
+.blog .blog-bottom {
+  padding-top: 50px;
+  padding-left: 10px;
+}
+.blog .blog-bottom h2 {
+  color: #08546C;
+  padding-bottom: 10px;
+}
+.blog .blog-bottom p {
+  color: #757575;
+  padding-bottom: 15px;
+}
+.blog .blog-bottom .blog-btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog .blog-bottom .blog-btns a {
+  text-decoration: none;
+  color: #757575;
+  gap: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+.blog .blog-bottom .blog-btns a:hover {
+  color: #FFA800;
+  background-color: #FFF8EB;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,31 @@
+.footer{
+    padding: 100px 0;
+    @media screen and (max-width: 700px){
+        padding: 50px 0;
+    }
+    .navbar-brand{
+        color: #08546C;
+        font-weight: 700 !important;
+        font-size: 32px;
+    }
+    h3{
+        color: #08546C;
+        font-weight: 600;
+        padding-bottom: 15px;
+    }
+    p{
+        max-width: 375px;
+        color: #787878;
+    }
+    .contacts{
+        a{
+            color: #787878;
+            font-size: 28px;
+            transition: 0.3;
+            &:hover{
+                transition: 0.3s;
+                color: #FFA800;
+            }
+        }
+    }
+}

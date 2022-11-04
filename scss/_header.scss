@@ -56,6 +56,9 @@ header{
             color: $btn-color !important;
         }
     }
+    .active{
+        background-color: $header-background !important;
+    }
     .btn{
         color: white !important;
         border-color: $btn-color !important;
@@ -89,5 +92,4 @@ header{
     padding: 5px 0;
     transition: padding 0.5s;
 }
-
 
