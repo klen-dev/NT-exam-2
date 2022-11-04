@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creyente's Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&family=Poppins:wght@100;200;300;400;500;600;800&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header start  -->
+    <header id="header" class="navbar-shrink">
+      <div id="back-top" class="top">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Creyente</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+              </ul>
+              <button class="btn btn-outline-success py-2 px-4" type="submit">
+                Contact
+              </button>
+            </div>
+            <div
+              class="offcanvas offcanvas-start"
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
+              tabindex="-1"
+              id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                  Creyente
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link disabled"
+                      href="#"
+                      tabindex="-1"
+                      aria-disabled="true"
+                      >Disabled</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- /header end  -->
+    <!-- main start  -->
+    <main>
+      <!-- hero section start  -->
+      <section class="hero p-4 p-lg-5">
+        <div class="container">
+          <div class="row align-items-center pb-5">
+            <div
+              class="hero-left col-12 col-lg-6 d-flex flex-column gap-3 gap-lg-4 mt-5"
+            >
+              <span class="mb-3">
+                <a class="py-3 px-5 my-5" href="#">Hey, I’m Musa</a>
+              </span>
+              <h1>Building Digital Products, Brands & Experience.</h1>
+              <p>
+                A Product Design and Visual Designer in SF I”m Specialize in
+                UI/UX, Responsive web design, and visual Development.
+              </p>
+              <div class="hero-btns d-flex gap-4">
+                <a href="#">Hire Me</a>
+                <a href="#">My Work</a>
+              </div>
+            </div>
+            <div class="hero-right col-12 col-lg-6">
+              <!-- <img class="hero-right__img w-100" src="./images/hero.png" alt=""> -->
+              <div class="hero-right__img w-100">
+                <img
+                  class="hero-right__right w-25"
+                  src="./images/hero-right.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="hero-bottom col-12 position-relative d-flex justify-content-center"
+            >
+              <div class="card position-absolute p-5">
+                <h5 class="pb-3">STATISTIC</h5>
+                <div class="d-flex flex-wrap gap-5 justify-content-evenly">
+                  <div class="cards">
+                    <h2>300+</h2>
+                    <p>Project Delivery</p>
+                  </div>
+                  <div class="cards">
+                    <h2>8</h2>
+                    <p>Years Experience</p>
+                  </div>
+                  <div class="cards">
+                    <h2>16</h2>
+                    <p>Awards</p>
+                  </div>
+                  <div class="cards">
+                    <h2>70+</h2>
+                    <p>Happy Clients</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero /section end  -->
+      <!-- services section start  -->
+      <section class="services">
+        <div class="container">
+          <div class="row justify-content-center">
+            <a class="mb-4" id="services" href="#">Services</a>
+            <h2 class="mb-5">
+              Building Digital Product With Better Experience
+            </h2>
+            <div class="cards d-flex flex-wrap justify-content-center justify-content-md-between ">
+              <div class="card mb-3" style="width: 20rem">
+                <div class="card-body p-4 d-flex flex-column gap-4">
+                  <span><i class="fa-solid fa-anchor"></i></span>
+                  <h3>UI/UX Design</h3>
+                  <p>
+                    UI/UX Design I’ve created a user interface and user
+                    experience with some proccess and method.
+                  </p>
+                </div>
+              </div>
+              <div class="card mb-3" style="width: 20rem">
+                <div class="card-body p-4 d-flex flex-column gap-4">
+                  <span><i class="fa-solid fa-anchor"></i></span>
+                  <h3>UI/UX Design</h3>
+                  <p>
+                    UI/UX Design I’ve created a user interface and user
+                    experience with some proccess and method.
+                  </p>
+                </div>
+              </div><div class="card mb-3" style="width: 20rem">
+                <div class="card-body p-4 d-flex flex-column gap-4">
+                  <span><i class="fa-solid fa-anchor"></i></span>
+                  <h3>UI/UX Design</h3>
+                  <p>
+                    UI/UX Design I’ve created a user interface and user
+                    experience with some proccess and method.
+                  </p>
+                </div>
+              </div><div class="card mb-3" style="width: 20rem">
+                <div class="card-body p-4 d-flex flex-column gap-4">
+                  <span><i class="fa-solid fa-anchor"></i></span>
+                  <h3>UI/UX Design</h3>
+                  <p>
+                    UI/UX Design I’ve created a user interface and user
+                    experience with some proccess and method.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services /section end  -->
+      <!-- section portfolio start  -->
+      <section class="portfolio">
+
+      </section>
+      <!-- /section portfolio end  -->
+    </main>
+    <!-- /main end  -->
+    <!-- footer start  -->
+    <footer></footer>
+    <!-- /footer end  -->
+    <script src="./bootstrap/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
