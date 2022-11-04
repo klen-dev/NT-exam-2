@@ -88,9 +88,9 @@
 .services{
     background-color: #fff;
     padding-top: 200px !important;
-    // @media screen and (max-width: 770px){
-    //     padding-top: 400px !important;
-    // }
+    @media screen and (max-width: 770px){
+        padding-top: 400px !important;
+    }
     .row{
         >a{
             color: $btn-color !important;

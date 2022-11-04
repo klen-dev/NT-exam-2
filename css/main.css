@@ -168,6 +168,11 @@ header {
   background-color: #fff;
   padding-top: 200px !important;
 }
+@media screen and (max-width: 770px) {
+  .services {
+    padding-top: 400px !important;
+  }
+}
 .services .row > a {
   color: #145E76 !important;
   text-align: center;
