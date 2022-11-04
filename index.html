@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./bootstrap/bootstrap.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -19,7 +20,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&family=Schoolbell&display=swap" rel="stylesheet">
-    
   </head>
   <body  data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <!-- header start  -->
@@ -167,7 +167,7 @@
       </section>
       <!-- hero /section end  -->
       <!-- services section start  -->
-      <section class="services">
+      <section  class="services">
         <div class="container">
           <div class="row justify-content-center">
             <a class="mb-4" id="services" href="#">Services</a>
@@ -175,6 +175,7 @@
               Building Digital Product With Better Experience
             </h2>
             <div
+            data-aos="zoom-in-up"
               class="cards d-flex flex-wrap justify-content-center justify-content-md-between"
             >
               <div class="card mb-3" style="width: 20rem">
@@ -233,6 +234,7 @@
               Fusce iaculis.
             </p>
             <div
+            data-aos="zoom-in-up"
               class="cards row justify-content-center justify-content-xxl-between"
             >
               <div class="card mb-5" style="width: 35rem">
@@ -315,7 +317,7 @@
       </section>
       <!-- /section portfolio end  -->
       <!-- section 4 start  -->
-      <section class="sec-4">
+      <section data-aos="zoom-in-up" class="sec-4 ">
         <div class="container">
           <div class="row">
             <div class="col-12 col-xxl-6 pb-5 pb-lg-0 text-center">
@@ -441,7 +443,7 @@
       </section>
       <!-- section 4 end  -->
       <!-- section blog start  -->
-      <section id="blog" class="blog">
+      <section data-aos="zoom-in-up" id="blog" class="blog">
         <div class="container">
           <div class="row">
             <div class="blog-left col-12 col-lg-6">
@@ -476,7 +478,7 @@
     </main>
     <!-- /main end  -->
     <!-- footer start  -->
-    <footer class="footer">
+    <footer data-aos="zoom-in-up" class="footer">
       <div class="container">
         <div class="d-flex justify-content-between justify-content-lg-between flex-wrap gap-4 gap-lg-0">
           <div>
@@ -516,10 +518,15 @@
             <p>44, Housing State, 3200</p>
           </div>
         </div>
+        <!-- Set up your HTML -->
       </div>
     </footer>
     <!-- /footer end  -->
     <script src="./bootstrap/bootstrap.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
