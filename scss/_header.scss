@@ -46,6 +46,7 @@ header{
     }
     .navbar-toggler{
         border-color: $btn-color !important;
+        background-color: white !important;
         &:focus{
             color: $btn-color !important;
         }

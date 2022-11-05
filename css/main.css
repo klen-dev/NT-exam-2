@@ -43,6 +43,7 @@ header {
 }
 .navbar .navbar-toggler {
   border-color: #145E76 !important;
+  background-color: white !important;
 }
 .navbar .navbar-toggler:focus {
   color: #145E76 !important;
@@ -185,6 +186,7 @@ body {
   top: 0;
   width: 120%;
 }
+
 .hero-bottom {
   height: 30px;
 }
@@ -192,7 +194,15 @@ body {
   border-radius: 20px !important;
 }
 .hero-bottom .card h5 {
+  font-size: 32px;
   font-weight: 700;
+}
+.hero-bottom .card h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.hero-bottom .card p {
+  font-size: 24px;
 }
 .hero-bottom .card h5, .hero-bottom .card h2, .hero-bottom .card p {
   color: #145E76 !important;
@@ -202,9 +212,14 @@ body {
   background-color: #fff;
   padding-top: 200px !important;
 }
+@media screen and (max-width: 900px) {
+  .services {
+    padding-top: 350px !important;
+  }
+}
 @media screen and (max-width: 770px) {
   .services {
-    padding-top: 400px !important;
+    padding-top: 500px !important;
   }
 }
 .services .row > a {

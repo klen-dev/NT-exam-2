@@ -76,7 +76,15 @@ body{
     .card{
         border-radius: 20px !important;
         h5{
+            font-size: 32px;
             font-weight: 700;
+        }
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 24px;
         }
         h5,h2,p{
             color: $btn-color !important;
@@ -88,8 +96,11 @@ body{
 .services{
     background-color: #fff;
     padding-top: 200px !important;
+    @media screen and (max-width: 900px){
+        padding-top: 350px !important;
+    }
     @media screen and (max-width: 770px){
-        padding-top: 400px !important;
+        padding-top: 500px !important;
     }
     .row{
         >a{
