@@ -243,7 +243,6 @@ body{
         }
     }
     .blog-right{
-        padding-top: 50px;
         h2{
             color: #08546C;
             font-weight: 600;
@@ -265,15 +264,18 @@ body{
             padding: 16px 24px;
         }
         .carousel-control-next, .carousel-control-prev{
-            // bottom: -30px !important;
-            // top: 50px !important;
-            // margin-top: 120px !important;
-            // margin-left: auto;
             position: static !important;
-            &:hover{
-                .visually-hidden{
-                    font-size: 50px !important;
+            margin-top: 50px;
+            i{
+                color: #ffa63a5f;
+                background-color: white;
+                font-size: 42px;
+                &:hover{
+                    color: #FFA63A;
                 }
+            }
+            &-icon{
+                background-color: #FFA63A;
             }
         }
     }

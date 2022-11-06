@@ -398,7 +398,7 @@
           <div class="row">
             <div class="blog-left col-12 col-lg-6">
               <!-- <img src="./images/blog.png" alt="" /> -->
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div id="blog-carousel" class="carousel slide" data-bs-ride="true">
                 <!-- <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -415,23 +415,30 @@
                     <img src="./images/blog.png" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                
               </div>
             </div>
-            <div class="blog-right col-12 col-lg-6 ps-3 ps-lg-5">
-              <h2>My Blog And News</h2>
+            <div class="blog-right col-12 col-lg-6 ps-3 ps-lg-5 d-flex flex-column justify-content-between">
+              <div>
+                <h2>My Blog And News</h2>
               <p>
                 If It’s abillboard ad, you’ll need a super catchy headline due
                 to the speed at which people will pass.
               </p>
               <a href="#">Go To The Blog</a>
+              </div>
+              <div class="blog-btns d-flex">
+                <button class="carousel-control-prev" type="button" data-bs-target="#blog-carousel" data-bs-slide="prev">
+                  <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span> -->
+                  <i class="fa-regular fa-circle-left"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#blog-carousel" data-bs-slide="next">
+                  <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span> -->
+                  <i class="fa-regular fa-circle-right"></i>
+                </button>
+              </div>
             </div>
             <div class="blog-bottom col-12 col-lg-6">
               <h2>How This Agency Helped My Business And Career Journey?</h2>
@@ -471,21 +478,21 @@
               <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
-          <div class="pages col-12 col-lg-6 col-xxl-3">
+          <div class="pages d-flex flex-column col-12 col-lg-6 col-xxl-3">
             <h3>Pages</h3>
-            <p>Home</p>
-            <p>About</p>
-            <p>Service</p>
-            <p>Portfolio</p>
-            <p>Blog</p>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Blog</a>
           </div>
-          <div class="footer-services col-12 col-lg-6 col-xxl-3">
+          <div class="footer-services d-flex flex-column col-12 col-lg-6 col-xxl-3">
             <h3>Services</h3>
-            <p>Web Design</p>
-            <p>App Design</p>
-            <p>Dashboard</p>
-            <p>Illustration</p>
-            <p>Development</p>
+            <a href="#">Web Design</a>
+            <a href="#">App Design</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Illustration</a>
+            <a href="#">Development</a>
           </div>
           <div class="footer-contact col-12 col-lg-6 col-xxl-3">
             <h3>Contact</h3>
