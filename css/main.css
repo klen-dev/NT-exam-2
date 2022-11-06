@@ -97,6 +97,8 @@ header {
   }
 }
 .footer .navbar-brand {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
   color: #08546C;
   font-weight: 700 !important;
   font-size: 32px;
@@ -160,6 +162,11 @@ body {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 500px) {
+  .hero-left h1 {
+    font-size: 34px;
+  }
+}
 .hero-left p {
   color: white;
   opacity: 0.6;
@@ -181,6 +188,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 .hero-right img {
   top: 0;
@@ -191,7 +199,13 @@ body {
   height: 30px;
 }
 .hero-bottom .card {
+  padding: 50px 150px !important;
   border-radius: 20px !important;
+}
+@media screen and (max-width: 600px) {
+  .hero-bottom .card {
+    padding: 25px 75px !important;
+  }
 }
 .hero-bottom .card h5 {
   font-size: 32px;
@@ -212,12 +226,12 @@ body {
   background-color: #fff;
   padding-top: 200px !important;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .services {
-    padding-top: 350px !important;
+    padding-top: 300px !important;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1000px) {
   .services {
     padding-top: 500px !important;
   }
@@ -271,6 +285,8 @@ body {
   padding-bottom: 100px;
 }
 .portfolio .row h2 {
+  font-size: 42px;
+  font-weight: 700;
   color: #145E76;
   padding-bottom: 10px;
 }
@@ -313,6 +329,16 @@ body {
 .sec-4__right p:nth-child(odd) {
   opacity: 0.5;
 }
+.sec-4 .carousel-btns {
+  justify-content: center;
+  display: flex;
+}
+.sec-4 .carousel-control-next, .sec-4 .carousel-control-prev {
+  position: static !important;
+}
+.sec-4 .carousel-control-next:hover .visually-hidden, .sec-4 .carousel-control-prev:hover .visually-hidden {
+  font-size: 50px !important;
+}
 
 .blog {
   padding: 200px 0 100px 0;
@@ -352,6 +378,12 @@ body {
   border-radius: 28px;
   text-decoration: none;
   padding: 16px 24px;
+}
+.blog .blog-right .carousel-control-next, .blog .blog-right .carousel-control-prev {
+  position: static !important;
+}
+.blog .blog-right .carousel-control-next:hover .visually-hidden, .blog .blog-right .carousel-control-prev:hover .visually-hidden {
+  font-size: 50px !important;
 }
 .blog .blog-bottom {
   padding-top: 50px;
