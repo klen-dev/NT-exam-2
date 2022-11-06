@@ -7,6 +7,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+.dark-mode{
+    background-color: #131d27;
+}
+
 header{
     background-color: $header-background !important;
     background-image: url('../images/header-back.png') !important;
@@ -68,6 +72,10 @@ header{
         &:hover{
             background-color: $btn-color !important;
         }
+    }
+    .fa-eye{
+        color: white !important;
+        background-color: transparent;
     }
     .collapse{
         .navbar-nav{

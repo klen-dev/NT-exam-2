@@ -27,7 +27,6 @@
     <div class="loader_bg">
       <div class="loader"></div>
   </div>
-  
     <!-- header start  -->
     <header id="header" class="navbar-shrink">
       <div id="back-top" class="top">
@@ -40,10 +39,7 @@
             <button
               class="navbar-toggler"
               type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasScrolling"
-              aria-controls="offcanvasScrolling"
-              aria-label="Close"
+              class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -65,18 +61,12 @@
                   <a class="nav-link" href="#blog">Blog</a>
                 </li>
               </ul>
+              <button class="btn btn-outline-success py-2 px-4 me-4" onclick="myFunction()"><i class="fa-solid fa-eye"></i></button>
               <button class="btn btn-outline-success py-2 px-4" type="submit">
                 Contact
               </button>
             </div>
-            <div
-              class="offcanvas offcanvas-start"
-              data-bs-scroll="true"
-              data-bs-backdrop="false"
-              tabindex="-1"
-              id="offcanvasScrolling"
-              aria-labelledby="offcanvasScrollingLabel"
-            >
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
                   Creyente
@@ -107,6 +97,7 @@
                     <a class="nav-link" href="#blog">Blog</a>
                   </li>
                 </ul>
+                <button class="btn btn-outline-success py-2 px-4 me-4 mb-3" onclick="myFunction()"><i class="fa-solid fa-eye"></i></button>
                 <button class="btn btn-outline-success py-2 px-4" type="submit">
                   Contact
                 </button>
@@ -494,5 +485,12 @@
           $('.loader_bg').fadeToggle();
       }, 1000);
     </script>
+    <script>
+      function myFunction() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+      
   </body>
 </html>
