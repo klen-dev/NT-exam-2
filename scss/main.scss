@@ -83,9 +83,9 @@ body{
     padding-bottom: 50px;
     img{
         top: 0;
-        width: 60% !important;
-        @media screen and (min-width: 700px) {
-            width: 90% !important;
+        width: 70% !important;
+        @media screen and (max-width: 700px) {
+            width: 80% !important;
         }   
         // @media screen and (max-width: 990px) {
         //     width: 70% !important;
